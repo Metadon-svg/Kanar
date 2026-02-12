@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "kanar",
+  "version": "1.0.0",
+  "name": "Kanar Client",
+  "entrypoints": {
+    "client": [ "net.kanar.KanarMod" ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "1.21.4"
+  }
+}
