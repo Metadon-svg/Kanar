@@ -2,7 +2,13 @@ plugins {
     kotlin("jvm") version "2.1.0"
     id("fabric-loom") version "1.9-SNAPSHOT"
 }
-repositories { mavenCentral(); maven("https://maven.terraformersmc.com/") }
+
+repositories {
+    mavenCentral()
+    maven("https://maven.fabricmc.net/")
+    maven("https://maven.terraformersmc.com/")
+}
+
 dependencies {
     minecraft("com.mojang:minecraft:1.21.4")
     mappings("net.fabricmc:yarn:1.21.4+build.1:v2")
