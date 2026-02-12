@@ -6,7 +6,7 @@ import net.minecraft.client.MinecraftClient
 class KillAuraTargetTracker {
     var target: LivingEntity? = null
     
-    fun updateTarget() {
-        // Логика поиска цели
+    fun getTarget(): LivingEntity? {
+        return target
     }
 }
