@@ -4,10 +4,13 @@ import net.minecraft.entity.LivingEntity
 
 class ModuleKillAura {
     var target: LivingEntity? = null
+    val clicker = KillAuraClicker()
     val targetTracker = KillAuraTargetTracker()
 
     fun onUpdate() {
-        target = targetTracker.getTarget()
+        target = targetTracker.target
+        clicker.enabled = target != null
+        
         if (target != null) {
             // Логика атаки
         }
