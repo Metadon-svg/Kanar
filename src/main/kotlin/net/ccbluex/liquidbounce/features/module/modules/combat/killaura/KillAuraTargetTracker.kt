@@ -1,12 +1,12 @@
 package net.ccbluex.liquidbounce.features.module.modules.combat.killaura
 
-import net.minecraft.world.entity.LivingEntity
+import net.minecraft.entity.LivingEntity
+import net.minecraft.client.MinecraftClient
 
-object KillAuraTargetTracker {
+class KillAuraTargetTracker {
     var target: LivingEntity? = null
-    private val ignoreShield = true
-
-    fun update() {
-        // Твоя логика поиска цели по дистанции
+    
+    fun updateTarget() {
+        // Логика поиска цели
     }
 }
