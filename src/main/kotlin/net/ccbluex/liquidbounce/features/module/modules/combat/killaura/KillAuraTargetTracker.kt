@@ -1,12 +1,8 @@
 package net.ccbluex.liquidbounce.features.module.modules.combat.killaura
 
 import net.minecraft.entity.LivingEntity
-import net.minecraft.client.MinecraftClient
 
 class KillAuraTargetTracker {
+    // Оставляем только переменную, Kotlin сам сделает getTarget()
     var target: LivingEntity? = null
-    
-    fun getTarget(): LivingEntity? {
-        return target
-    }
 }
